@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热门推荐</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="../js/flexible.js"></script>
+    <style>
+        #content {
+            width: 60%;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+            /* background-color: #fff; */
+        }
+        
+        #content-title {
+            line-height: 1rem;
+            margin-bottom: 0.1rem;
+            font-family: 隶书;
+            font-size: 0.4rem;
+            color: #a6372d;
+        }
+        
+        .content-tag {
+            display: flex;
+            width: 100%;
+            height: 2rem;
+            margin-bottom: 0.4rem;
+            /* background-color: bisque; */
+        }
+        
+        .content-tag div {
+            /* flex: 1; */
+            text-align: left;
+        }
+        
+        .right {
+            flex: 2;
+        }
+        
+        .left {
+            flex: 1;
+            position: relative;
+            height: 100%;
+            margin-top: 0.1rem;
+            /* padding-right: 1rem; */
+            /* border-right: 0.01rem solid #999; */
+        }
+        
+        .left:before {
+            content: "";
+            position: absolute;
+            left: 90%;
+            top: 10%;
+            width: 0.01rem;
+            height: 80%;
+            background-color: #a6372d;
+        }
+        
+        .left img {
+            height: 100%;
+        }
+        
+        .right {
+            margin-left: 0.2rem;
+        }
+        
+        .title {
+            position: relative;
+            font-family: 华文中宋;
+            font-size: 0.2rem;
+            color: #333;
+            z-index: 10;
+        }
+        
+        .title:after {
+            content: "";
+            position: absolute;
+            left: 0%;
+            top: 0.15rem;
+            width: 22%;
+            height: 0.15rem;
+            border-radius: 0.1rem;
+            background-color: #d9d0ba;
+            z-index: -1;
+        }
+        
+        .text {
+            position: relative;
+            margin-top: 0.4rem;
+            font-size: 0.15rem;
+            line-height: 0.2rem;
+            font-family: 华文中宋;
+            text-align: left;
+            color: #5b4c4b;
+        }
+        /* .text:before {
+            content: "";
+            position: absolute;
+            left: 0.3rem;
+            top: -0.5rem;
+            width: 90%;
+            height: 0.01rem;
+            background-color: #ccc;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="logo"><img src="../image/icon-cover.png" alt="logo">宋韵寻踪</div>
+        <div class="menu">
+            <ul>
+                <a href="index.html">
+                    <li>首页</li>
+                </a>
+                <a href="nsjz.html">
+                    <li>南宋建筑</li>
+                </a>
+                <a href="nswh.html">
+                    <li>南宋文化</li>
+                </a>
+                <a href="nsfs.html">
+                    <li>南宋服饰</li>
+                </a>
+                <a href="nsgy.html">
+                    <li>南宋官窑</li>
+                </a>
+                <a href="nssh.html">
+                    <li>南宋书画</li>
+                </a>
+            </ul>
+        </div>
+        <a href="search.html" class="search">
+            <div><img src="../image/icon-search-tea.png" alt="搜索"></div>
+        </a>
+    </div>
+    <div id="content">
+        <div id="content-title">热门推荐</div>
+        <a href="nsgy.html" class="animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0s">
+            <div class="content-tag">
+                <div class="left"><img src="../upload/hot-recommend-gy.png" alt=""></div>
+                <div class="right">
+                    <div class="title">南宋官窑
+                    </div>
+                    <div class="text">南宋官窑是官方的烧制瓷器的窑场，南宋时期劳动人民的制瓷技术有许多创造和进步。南宋建都临安时，建立修内司、郊坛下窑，生产官廷专用御品，故称“南宋官窑”……
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="nsjz.html" class="animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0s">
+            <div class="content-tag">
+                <div class="left"><img src="../upload/hot-recommend-jz.png" alt=""></div>
+                <div class="right">
+                    <div class="title">南宋建筑
+                    </div>
+                    <div class="text">南宋建筑风格的特点是多以整齐划一的空间布局，纯色彩的背景和亚麻或帆布等质地的家具搭配组成折射出现代简约的精神主义，建筑装饰上很少刻花，而流行用贴花、浮雕……
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="nsfs.html" class="animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0s">
+            <div class="content-tag">
+                <div class="left"><img src="../upload/hot-recommend-fs.png" alt=""></div>
+                <div class="right">
+                    <div class="title">南宋服饰
+                    </div>
+                    <div class="text">宋代织锦以成都蜀锦最有名，花纹有组合型儿何纹的八搭晕、六搭晕、盘毯等。几个填花的葵花、簇四金雕、大窠马打毯、雪花毯路、双窠云雁等……
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <a href="../xcx/html/aaaa（这里开始）.html">
+        <div id="turnto">
+            点击打开小程序
+        </div>
+    </a>
+    <script src="https://cdn.dowebok.com/131/js/wow.min.js"></script>
+    <script src="../js/dist_wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

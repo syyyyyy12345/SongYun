@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/flexible.js"></script>
+    <style>
+        body {
+            background: url("../upload/search-bg.jpg") no-repeat;
+            /* opacity: 0.5; */
+            background-size: cover;
+        }
+        
+        #content {
+            width: 100%;
+            height: 6rem;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        #search {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            margin: 0 auto;
+            padding-top: 0.5rem;
+        }
+        
+        #search div {
+            flex: 2;
+            height: 0.5rem;
+            /* float: left; */
+        }
+        
+        .search-icon {
+            /* padding-top: 0.1rem; */
+        }
+        
+        .search-icon img {
+            /* width: 100%; */
+            height: 100%;
+        }
+        
+        #search div:nth-child(2) {
+            flex: 8;
+        }
+        
+        .search-box {
+            height: 0.4rem;
+            width: 100%;
+            padding: 0rem 0.2rem;
+            margin: 0 auto;
+            border-radius: 0.25rem;
+            border: 0.02rem solid #a6372d;
+            font-size: 0.2rem;
+            color: #a6372d;
+        }
+        
+        #list {
+            width: 32%;
+            /* margin: 0 auto; */
+            margin-left: 39.5%;
+        }
+        
+        #list li a {
+            border: 1px solid #ddd;
+            margin-top: -1px;
+            /* 防止边框重复 */
+            background-color: #f6f6f6;
+            padding: 0.1rem 0.25rem;
+            text-decoration: none;
+            font-size: 0.15rem;
+            text-align: left;
+            color: #a6372d;
+            display: block;
+            /* 以块形式填充到列表 */
+        }
+        
+        #list li a:hover:not(.header) {
+            background-color: #eee;
+            /* 为所有链接添加悬停效果，标题除外 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="logo"><img src="../image/icon-cover.png" alt="logo">宋韵寻踪</div>
+        <div class="menu">
+            <ul>
+                <a href="index.html">
+                    <li>首页</li>
+                </a>
+                <a href="nsjz.html">
+                    <li>南宋建筑</li>
+                </a>
+                <a href="nswh.html">
+                    <li>南宋文化</li>
+                </a>
+                <a href="nsfs.html">
+                    <li>南宋服饰</li>
+                </a>
+                <a href="nsgy.html">
+                    <li>南宋官窑</li>
+                </a>
+                <a href="nssh.html">
+                    <li>南宋书画</li>
+                </a>
+            </ul>
+        </div>
+        <a href="search.html" class="search">
+            <div><img src="../image/icon-search-tea.png" alt="搜索"></div>
+        </a>
+    </div>
+    <div id="content">
+        <div id="search">
+            <div class="search-icon"><img src="../image/icon-search.png" alt=""></div>
+            <div><input type="text" class="search-box" id="search-box" onkeyup="myFunction()"></div>
+        </div>
+        <ul id="list" style="opacity: 0;">
+            <li><a href="nsjz.html">南宋建筑</a></li>
+            <li><a href="nssh.html">南宋书画</a></li>
+            <li><a href="nssh-zct.html">早春图</a></li>
+            <li><a href="nsgy-cave2.html">双鱼纹折沿盘</a></li>
+            <li><a href="nsfs-pic4.html">褐色罗印花褶裥裙</a></li>
+            <li><a href="nsgy.html">南宋官窑</a></li>
+            <li><a href="rmtj.html">热门推荐</a></li>
+        </ul>
+    </div>
+    <a href="index.html">
+        <div id="turnto">
+            返回
+        </div>
+    </a>
+    <script type="text/javascript">
+        function myFunction() {
+            // 声明变量
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('search-box');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("list");
+            li = ul.getElementsByTagName('li');
+
+            ul.style.opacity = 1;
+            // 循环遍历所有列表项，并隐藏那些与搜索查询不匹配的项
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

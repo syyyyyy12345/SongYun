@@ -1,0 +1,317 @@
+#flash {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5.2rem;
+    margin: 0 auto;
+}
+
+#flash #play {
+    width: 100%;
+    height: 2rem;
+    list-style: none;
+    margin: 0 auto;
+    /* position: absolute; */
+}
+
+#flash #play li {
+    display: none;
+    /* position: absolute; */
+    width: 100%;
+}
+
+#flash #play li img {
+    float: left;
+    width: 100%;
+}
+
+#flash #button {
+    position: absolute;
+    top: 4.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+}
+
+#button li {
+    margin-right: 0.15rem;
+    float: left;
+}
+
+#button li div {
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #f2e8db;
+}
+
+#prev {
+    width: 0.5rem;
+    height: 1rem;
+    /* background: url(images/beijing.png) 0px 0px; */
+    background-color: rgb(255, 255, 255, 0.2);
+    position: absolute;
+    top: 2rem;
+    left: 0.2rem;
+    z-index: 1000;
+}
+
+#next {
+    width: 0.5rem;
+    height: 1rem;
+    /* background: url(images/beijing.png) -40px 0px; */
+    background-color: rgb(255, 255, 255, 0.2);
+    position: absolute;
+    top: 2rem;
+    right: 0.2rem;
+    z-index: 1000;
+}
+
+#prev:hover {
+    /* background: url(images/beijing.png) 0px -62px; */
+    background-color: #f2e8db;
+}
+
+#next:hover {
+    /* background: url(images/beijing.png) -40px -62px; */
+    background-color: #f2e8db;
+}
+
+
+/* content */
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0.25rem;
+}
+
+.contentBox {
+    display: flex;
+    /* flex-grow: 1; */
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.contentBox1 {
+    height: 2rem;
+}
+
+.contentBox1 div:nth-child(1) {
+    flex: 5;
+    margin-right: 0.1rem;
+    padding: 0 0.2rem;
+    background-color: #fff;
+}
+
+.contentBox1 div:nth-child(2) {
+    flex: 4;
+    height: 100%;
+}
+
+.title {
+    /* margin-bottom: 0.1rem; */
+    font-family: 隶书;
+    font-size: 0.28rem;
+    color: #a6372d;
+}
+
+#intro-title {
+    margin-top: 0.2rem;
+}
+
+#intro-content {
+    /* height: 3rem; */
+    width: 100%;
+    height: 1rem;
+    margin: 0 auto;
+    margin-left: 0.1rem;
+    font-family: 华文中宋;
+    font-size: 0.14rem;
+    overflow: hiddden;
+    text-overflow: ellipsis;
+    color: #5b4c4b;
+    /* background-color: #ffa; */
+}
+
+.intro-pic img {
+    /* flex-shrink: 0; */
+    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
+}
+
+
+/* box2 */
+
+.contentBox2 {
+    height: 1.8rem;
+}
+
+.qjns {
+    flex: 2;
+    height: 100%;
+    margin-right: 0.1rem;
+    background-color: #fff;
+}
+
+.qjns-pic {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.qjns-pic img {
+    width: 100%;
+    margin-top: 0.3rem;
+}
+
+.qjns-title {
+    text-align: center;
+}
+
+.lszl {
+    flex: 4;
+    /* height: 6rem; */
+    background-color: #fff;
+}
+
+.lszl-title {
+    padding: 0.2rem 0rem 0rem 0.6rem;
+}
+
+.lszl-content {
+    padding: 0 0.2rem;
+    font-family: 华文中宋;
+    font-size: 0.16rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #5b4c4b;
+}
+
+.lszl-time {
+    font-size: 0.14rem;
+}
+
+.lszl-content ul li {
+    display: flex;
+    justify-content: space-between;
+    height: 0.25rem;
+}
+
+.lszl-content ul li span {
+    text-overflow: ellipsis;
+}
+
+
+/* box3 */
+
+.contentBox3 {
+    height: 1.8rem;
+}
+
+.nsms-di {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.nsms-di li {
+    float: left;
+    position: relative;
+    font-family: 华文中宋;
+    font-size: 0.14rem;
+}
+
+.nsms-pic {
+    flex: 2;
+    width: auto;
+    height: 100%;
+}
+
+.nsms-pic4 {
+    flex: 1.6;
+    height: 100%;
+    background-color: #fff;
+}
+
+.nsms-di li img {
+    width: 100%;
+    height: 100%;
+}
+
+.qjns-title-pic {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 0.3rem;
+}
+
+.qjns-title-pic img {
+    width: 100%;
+}
+
+.nsms-text {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    width: 90%;
+    padding: 5%;
+    background: rgb(143, 143, 143, 0.8);
+}
+
+.nsms-text3 p {
+    /* margin: 10% 8%; */
+}
+
+.nsms-pic1:hover .nsms-text1 {
+    display: block;
+}
+
+.nsms-pic2:hover .nsms-text2 {
+    display: block;
+}
+
+.nsms-pic3:hover .nsms-text3 {
+    display: block;
+}
+
+
+/* box4 */
+
+.rmtj {
+    width: 100%;
+    background-color: #fff;
+}
+
+.contentBox4 {
+    width: 100%;
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.3rem;
+    background-color: #fff;
+}
+
+.rmtj-title {
+    /* margin-bottom: 0.2rem; */
+    padding: 0.15rem 0.3rem;
+}
+
+.rmtj-pic {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.rmtj-pic div {
+    flex: 1;
+    height: 2rem;
+    text-align: center;
+}
+
+.rmtj-pic div a img {
+    margin: 0 auto;
+    height: 100%;
+}

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一起看展</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/aui.css">
+    <style>
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: 21.33333333px;
+            }
+        }
+        
+        @media screen and (min-width: 360px) {
+            html {
+                font-size: 24px;
+            }
+        }
+        
+        @media screen and (min-width: 375px) {
+            html {
+                font-size: 25px;
+            }
+        }
+        
+        @media screen and (min-width: 384px) {
+            html {
+                font-size: 25.6px;
+            }
+        }
+        
+        @media screen and (min-width: 400px) {
+            html {
+                font-size: 26.66666667px;
+            }
+        }
+        
+        @media screen and (min-width: 414px) {
+            html {
+                font-size: 27.6px;
+            }
+        }
+        
+        @media screen and (min-width: 424px) {
+            html {
+                font-size: 28.26666667px;
+            }
+        }
+        
+        @media screen and (min-width: 480px) {
+            html {
+                font-size: 32px;
+            }
+        }
+        
+        @media screen and (min-width: 540px) {
+            html {
+                font-size: 36px;
+            }
+        }
+        
+        @media screen and (min-width: 720px) {
+            html {
+                font-size: 48px;
+            }
+        }
+        
+        @media screen and (min-width: 750px) {
+            html {
+                font-size: 50px;
+            }
+        }
+        
+        body {
+            min-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+            line-height: 1.5;
+            font-family: Arial, Helvetica;
+            background-color: #fcf9f2;
+        }
+        /* banner */
+        
+        .banner {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 1.8rem;
+            margin-top: 2rem;
+            text-align: center;
+            /* padding-top: 0.7rem; */
+        }
+        
+        .banner-icon {
+            flex: 1;
+            margin-top: 0.3rem;
+        }
+        
+        .banner-title {
+            flex: 5;
+            font-size: 1rem;
+            font-family: 华文隶书;
+            color: #a6362c;
+        }
+        
+        .banner img {
+            width: auto;
+            height: 0.9rem;
+            margin: 0 auto;
+        }
+        /* content */
+        
+        .content {
+            width: 100%;
+            /* height: 40rem; */
+            margin: 0 auto;
+            /* background-color: lightgray; */
+        }
+        
+        .area {
+            position: relative;
+            height: 15rem;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            /* background-color: #666; */
+        }
+        
+        .area img {
+            margin: 0 auto;
+        }
+        
+        .people {
+            position: absolute;
+            top: 6rem;
+            left: 8rem;
+            color: #fff;
+        }
+        
+        .dotted {
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: #a6362c;
+            border-radius: 50%;
+        }
+        
+        .people div[class^="pulse"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0.2rem;
+            height: 0.2rem;
+            box-shadow: 0 0 12px #a6362c;
+            border-radius: 50%;
+            animation: pulse 1.2s linear infinite;
+        }
+        
+        .people div.pulse2 {
+            animation-delay: 0.4s;
+        }
+        
+        .people div.pulse3 {
+            animation-delay: 0.8s;
+        }
+        
+        @keyframes pulse {
+            0% {}
+            70% {
+                /* transform: scale(5);   不能使用，会让阴影变大*/
+                width: 1.2rem;
+                height: 1.2rem;
+                opacity: 1;
+            }
+            100% {
+                width: 2rem;
+                height: 2rem;
+                opacity: 0;
+            }
+        }
+        
+        .p1 {
+            top: 5.8rem;
+            left: 8.6rem;
+        }
+        
+        .p2 {
+            top: 10rem;
+            left: 3.3rem;
+        }
+        
+        .p3 {
+            top: 8.1rem;
+            left: 12.4rem;
+        }
+        
+        .p4 {
+            top: 2.8rem;
+            left: 4.8rem;
+        }
+        
+        .text {
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        #turn {
+            font-size: 1.2rem;
+            font-family: 隶书;
+            font-weight: bold;
+            font-style: italic;
+            color: #a6362c;
+        }
+        
+        .yyy {
+            height: 3rem;
+            margin: 2rem auto;
+            font-family: 隶书;
+            font-size: 1rem;
+            text-align: center;
+            color: #a6362c;
+        }
+        
+        .yyy img {
+            height: 100%;
+            margin: 0 auto;
+            animation: run 0.5s infinite linear;
+            animation-direction: alternate;
+        }
+        
+        @keyframes run {
+            from {
+                transform: rotate(0, 50%);
+            }
+            to {
+                transform: rotate(30deg);
+            }
+        }
+        /* footer */
+        
+        #footer {
+            padding: 0 1rem;
+        }
+        
+        #footer div a {
+            color: #666;
+        }
+        
+        .aui-bar {
+            background-color: #f4e6d0;
+        }
+        
+        .bottom-icon {
+            width: 28%;
+            height: auto;
+            margin: 0.3rem auto;
+            padding-top: 0.15rem;
+        }
+        
+        body {
+            width: 15.25rem;
+            margin: 0 auto;
+            /* margin-top: 6rem; */
+            background-color: #fff;
+        }
+        
+        .all-content {
+            height: 33rem;
+            overflow-y: auto;
+            background-color: #fcf9f2;
+        }
+        
+        #footer {
+            width: 15.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 29.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-content">
+        <!-- banner -->
+        <div class="banner">
+            <a href="index.html" class="banner-icon"><img src="../images/icon-back-red.png" alt=""></a>
+            <h1 class="banner-title">一起看展吧</h1>
+            <a href="#" class="banner-icon search-tea"><img src="../images/icon-share.png" alt=""></a>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <div class="area">
+                <img src="../upload/yqkz.png" alt="">
+                <div class="people p1">
+                    <div class="dotted"></div>
+                    <div class="pulse1"></div>
+                    <div class="pulse2"></div>
+                    <div class="pulse3"></div>
+                </div>
+                <div class="people p2">
+                    <div class="dotted"></div>
+                    <div class="pulse1"></div>
+                    <div class="pulse2"></div>
+                    <div class="pulse3"></div>
+                </div>
+                <div class="people p3">
+                    <div class="dotted"></div>
+                    <div class="pulse1"></div>
+                    <div class="pulse2"></div>
+                    <div class="pulse3"></div>
+                </div>
+                <div class="people p4">
+                    <div class="dotted"></div>
+                    <div class="pulse1"></div>
+                    <div class="pulse2"></div>
+                    <div class="pulse3"></div>
+                </div>
+            </div>
+            <div class="text">当前<span id="turn">10225</span>人观展</div>
+            <div class="yyy"><img src="../images/icon-yyy.png" alt="">摇一摇</div>
+        </div>
+    </div>
+</body>
+<script>
+    var i = 10239;
+    var tt = setInterval(displayNum, 1000);
+
+    function displayNum() {
+        if (i < 99999) {
+            i += Math.floor(Math.random() * 10);;
+            document.getElementById('turn').innerText = i;
+        } else clearInterval(tt);
+    }
+</script>
+
+</html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南宋文化</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/aui.css">
+    <style>
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: 21.33333333px;
+            }
+        }
+        
+        @media screen and (min-width: 360px) {
+            html {
+                font-size: 24px;
+            }
+        }
+        
+        @media screen and (min-width: 375px) {
+            html {
+                font-size: 25px;
+            }
+        }
+        
+        @media screen and (min-width: 384px) {
+            html {
+                font-size: 25.6px;
+            }
+        }
+        
+        @media screen and (min-width: 400px) {
+            html {
+                font-size: 26.66666667px;
+            }
+        }
+        
+        @media screen and (min-width: 414px) {
+            html {
+                font-size: 27.6px;
+            }
+        }
+        
+        @media screen and (min-width: 424px) {
+            html {
+                font-size: 28.26666667px;
+            }
+        }
+        
+        @media screen and (min-width: 480px) {
+            html {
+                font-size: 32px;
+            }
+        }
+        
+        @media screen and (min-width: 540px) {
+            html {
+                font-size: 36px;
+            }
+        }
+        
+        @media screen and (min-width: 720px) {
+            html {
+                font-size: 48px;
+            }
+        }
+        
+        @media screen and (min-width: 750px) {
+            html {
+                font-size: 50px;
+            }
+        }
+        
+        body {
+            min-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+            line-height: 1.5;
+            font-family: Arial, Helvetica;
+            background-color: white;
+        }
+        /* .top-bg {
+            width: 15.25rem;
+            height: auto;
+        } */
+        
+        .top-bg img {
+            position: relative;
+            width: 15.25rem;
+            height: auto;
+            z-index: -1;
+        }
+        /* banner */
+        
+        .banner {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 7.4rem;
+            margin-top: -7rem;
+            /* padding-top: 1.8rem; */
+            text-align: center;
+            /* background-image: url(../upload/nswh-bg.png); */
+            /* padding-top: 0.7rem; */
+        }
+        
+        .banner-icon {
+            flex: 1;
+            margin-top: 0.3rem;
+        }
+        
+        .banner-title {
+            flex: 5;
+            font-size: 0.9rem;
+            font-family: 隶书;
+            color: #fff;
+        }
+        
+        .banner img {
+            width: auto;
+            height: 0.8rem;
+            margin: 0 auto;
+        }
+        
+        .top-title {
+            margin-left: 1rem;
+            /* margin-top: 1rem; */
+        }
+        
+        .top-title p:nth-child(1) {
+            font-size: 1.1rem;
+            font-family: 华文隶书;
+            color: #a6362c;
+        }
+        
+        .top-title p:nth-child(2) {
+            margin-top: -0.5rem;
+        }
+        /* content */
+        
+        .content {
+            width: 86%;
+            height: 301rem;
+            margin: 0 auto;
+            margin-top: 0.6rem;
+            /* background-color: rgb(206, 182, 182); */
+        }
+        
+        .v1-title {
+            font-family: 华文仿宋;
+            font-size: 0.5rem;
+            color: #666;
+        }
+        
+        .classify {
+            border-bottom: 0.01rem solid #ccc;
+            margin-bottom: 0.6rem;
+        }
+        
+        .classify ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .classify ul li a {
+            font-family: 华文仿宋;
+            font-size: 0.65rem;
+            color: #666;
+        }
+        
+        .box {
+            margin-bottom: 1.8rem;
+        }
+        
+        .box-title {
+            position: relative;
+            font-family: 华文仿宋;
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .box-title:after {
+            content: "";
+            position: absolute;
+            left: 0.5rem;
+            top: 0.5rem;
+            width: 15%;
+            height: 0.6rem;
+            border-radius: 0.4rem;
+            background-color: #f4e6d0;
+            z-index: -1;
+        }
+        
+        .text {
+            font-family: 华文仿宋;
+            font-size: 0.55rem;
+            text-indent: 1rem;
+            line-height: 0.65rem;
+            color: #666;
+        }
+        
+        .box2-content {
+            display: flex;
+            /* margin-top: 0.3rem; */
+        }
+        
+        .box2-left {
+            flex: 6;
+            padding-right: 0.45rem;
+            text-indent: 0rem;
+        }
+        
+        .box2-right {
+            flex: 4;
+        }
+        
+        .box2-right img:nth-child(2) {
+            margin-top: 4rem;
+        }
+        
+        .box3 video {
+            margin: 0.6rem 0;
+        }
+        
+        .box4 img {
+            margin-top: 1rem;
+        }
+        
+        .box5-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .box5-left {
+            width: 48%;
+            margin-top: 0.5rem;
+        }
+        
+        .box5-right {
+            width: 48%;
+            font-family: 华文仿宋;
+            font-size: 0.5rem;
+            text-align: center;
+            /* text-indent: 1rem; */
+            /* line-height: 0.65rem; */
+            color: #666;
+        }
+        
+        .box-title-s {
+            font-family: 华文仿宋;
+            font-size: 0.7rem;
+            /* font-weight: bold; */
+            color: #333;
+            margin-bottom: 0.1rem;
+        }
+        
+        .box5-ny {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .box5-ny-left {
+            width: 55%;
+            font-family: 华文仿宋;
+            font-size: 0.5rem;
+            /* text-align: center; */
+            text-indent: 1rem;
+            /* line-height: 0.65rem; */
+            color: #666;
+        }
+        
+        .box5-ny-right {
+            width: 42%;
+            /* margin-top: 0.5rem; */
+        }
+        
+        .box5-ny-right img:nth-child(1) {
+            margin-top: 0.5rem;
+        }
+        
+        .box5-ny-right img:nth-child(2) {
+            margin-top: 1rem;
+        }
+        
+        .box5-sy {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+        
+        .box5-sy-left {
+            padding-top: 4rem;
+            width: 42%;
+        }
+        
+        .box5-sy-right {
+            width: 55%;
+        }
+        
+        .box6-jy {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+        
+        .box6-jy-left {
+            width: 55%;
+        }
+        
+        .box6-jy-right {
+            padding-top: 1.5rem;
+            width: 42%;
+        }
+        
+        .box6-sx {
+            margin-top: 1rem;
+        }
+        
+        .box7 img {
+            margin-top: 1rem;
+        }
+        
+        .box7-jsll {
+            margin-top: 1rem;
+        }
+        
+        .box8 .text {
+            font-size: 0.5rem;
+            text-indent: 0;
+        }
+        
+        .box8-picleft {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem 0.2rem 0.5rem 0.4rem;
+            border-radius: 1rem;
+            background-color: #fff7ee;
+        }
+        
+        .box8-picleft-left {
+            width: 42%;
+        }
+        
+        .box8-picleft-left img {
+            margin-top: 10%;
+        }
+        
+        .box8-picleft-right {
+            width: 54%;
+        }
+        
+        .box8-picright {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0.4rem 0.5rem 0.2rem;
+            margin-bottom: 0.5rem;
+            border-radius: 1rem;
+            background-color: #fff7ee;
+        }
+        
+        .box8-picright-right {
+            width: 42%;
+        }
+        
+        .box8-picright-right img {
+            margin-top: 10%;
+        }
+        
+        .box8-picright-left {
+            width: 54%;
+        }
+        /* footer */
+        
+        #footer {
+            padding: 0 1rem;
+        }
+        
+        #footer div a {
+            color: #666;
+        }
+        
+        .aui-bar {
+            background-color: #f4e6d0;
+        }
+        
+        .bottom-icon {
+            width: 28%;
+            height: auto;
+            margin: 0.3rem auto;
+            padding-top: 0.15rem;
+        }
+        
+        body {
+            width: 15.25rem;
+            margin: 0 auto;
+            /* margin-top: 6rem; */
+            background-color: #fff;
+        }
+        
+        .all-content {
+            height: 30rem;
+            overflow-y: auto;
+            /* background-color: #fcf9f2; */
+        }
+        
+        #footer {
+            width: 15.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 29.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-content">
+        <div class="top-bg"><img src="../upload/nswh-bg.png" alt=""></div>
+        <!-- banner -->
+        <div class="banner">
+            <a href="index.html" class="banner-icon"><img src="../images/icon-back-white.png" alt=""></a>
+            <h1 class="banner-title">南宋那些事儿</h1>
+            <a href="#" class="banner-icon search-tea"><img src="../images/icon-share-white.png" alt=""></a>
+        </div>
+        <div class="top-title">
+            <p>南宋文化</p>
+            <p>[nan song wen hua]</p>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <video width="100%" height="auto" controls><source src="../upload/nswh-v1.mp4" type="video/mp4"></video>
+            <span class="v1-title">中国历史朝代</span>
+            <div class="classify">
+                <ul>
+                    <li><a href="#box1" style="color: #a6362c;">国号</a></li>
+                    <li><a href="#box2">疆域</a></li>
+                    <li><a href="#box3">帝王</a></li>
+                    <li><a href="#box4">政治</a></li>
+                    <li><a href="#box5">经济</a></li>
+                    <li><a href="#box6">文化</a></li>
+                    <li><a href="#box7">军事</a></li>
+                    <li><a href="#box8">名将</a></li>
+                </ul>
+            </div>
+            <div class="box box1" id="box1">
+                <div class="box-title">国号</div>
+                <div class="box1-content text">靖康之变后，宋室南迁，由于疆域相对于北宋而言位置靠南，史称南宋。 </div>
+            </div>
+            <div class="box box2" id="box2">
+                <div class="box-title">疆域</div>
+                <div class="box2-content">
+                    <div class="box2-left text">
+                        领土范围
+                        <p class="text">南宋初,金军一度攻入今湖南、江西和浙江三省的中部。绍兴八年（1138年）金朝领三省事宗磐等人将河南、陕西之地归还宋朝。绍兴九年，宋金和议成立，双方以当时的黄河为界。次年金军出兵取河南、陕西。绍兴十一年，宋金议定以淮河为界。第二年又将西部界线调整至大散关及秦岭以南。以后虽有局部变动，基本稳定在这条界线。
+                        </p>
+                        <p class="text">据赵汝括所写的《诸蕃志》一书记载，当时澎湖列岛已隶属于福建路的晋江县。这标志着大陆政权对海上岛屿行使管辖的加强。
+                        </p>
+                        <p class="text">据赵汝括于宝庆二年(1226年）所写的《诸蕃志》一书记载，当时澎湖列岛已隶属于福建路的晋江县。这标志着大陆政权对海上岛屿行使管辖的加强。
+                        </p>
+                    </div>
+                    <div class="box2-right">
+                        <img src="../upload/nswh-jy-1.png" alt="">
+                        <img src="../upload/nswh-jy-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="box box3" id="box3">
+                <div class="box-title">帝王</div>
+                <video width="100%" height="auto" controls><source src="../upload/nswh-v2.mp4" type="video/mp4"></video>
+                <img src="../upload/nswh-dw-1.png" alt="">
+                <img src="../upload/nswh-dw-2.png" alt="">
+            </div>
+            <div class="box box4" id="box4">
+                <div class="box-title">政治</div>
+                <div class="text">南宋是加强中央集权、“干强枝弱”的时期。南宋继承了北宋“强干弱枝”政策，在中央地方权力、官僚机构、司法、军权等方面加强中央集权的一系列措施，为维护国家内部统一、社会稳定和经济发展提供了良好的国内环境。从用人制度上看，南宋是所谓“皇帝与士大夫共治天下”的时代。南宋时期，取士更是不受出身门第的限制，只要不是重刑罪犯，都可以应试授官，南宋的科举登第者多数为平民。 </div>
+                <img src="../upload/nswh-zz.png" alt="">
+            </div>
+            <div class="box box5" id="box5">
+                <div class="box-title">经济</div>
+                <div class="box5-content">
+                    <div class="box5-left text">南宋与印度洋北岸的阿拉伯帝国构成了当时世界贸易圈的两大轴心，鉴于此，美籍学者马润潮把宋代视为“世界伟大海洋贸易史上的第一个时期” </div>
+                    <div class="box5-right"><img src="../upload/nswh-jj.png" alt="">南宋绍兴元宝</div>
+                </div>
+                <div class="box-title-s">农业</div>
+                <div class="box5-ny">
+                    <div class="box5-ny-left text">南宋农业概括而言，因人口南移、国土促狭而导致的粮食压力及因军费开支而造成的财政危机，使农业承受更为沉重的负担，因而只能向生产的深度和广度进军。水利田和梯田的开发，沿边屯营田的开垦，扩大了农田面积。较之北宋熙丰时期掀起农田水利建设高潮而言，南宋的水利更具持久、经常修复的特点，而且探索出一条大中型水利官修为主，小型水利维修民办公助的经营模式，地方乡绅与富户扮演了小型水利兴修和管理主角的模式。南宋时期，土地买卖更为盛行，“千年田换八百主”成为颇为恰切的概括。 </div>
+                    <div class="box5-ny-right"><img src="../upload/nswh-jj-ny-1.png" alt=""><img src="../upload/nswh-jj-ny-2.png" alt=""></div>
+                </div>
+                <div class="box5-sy">
+                    <div class="box5-sy-left"><img src="../upload/nswh-jj-sy.png" alt=""></div>
+                    <div class="box5-sy-right">
+                        <div class="box-title-s">商业</div>
+                        <div class="text">自秦以来的历朝一直奉行“重农抑商”政策。到了宋代，商人社会地位得到了提高。南宋开创了古代中国商品经济发展的新时代。商业与农业同被视为创造社会财富的源泉。“士、农、工、商，皆百姓之本业”成为社会共识。
+                            <div class="text">南宋继续“农商并重”的国策，商品交换活动遍及城乡，远至海外，在商品流通日益繁忙的基础上逐渐形成了通畅的商业网络，出现临安、成都等全国性的著名商业大都市，冲破了长期以来“市”、“坊”分离的封闭式坊市制度，出现了住宅与店肆混合的“市坊合一”商业格局。
+                            </div>
+                            <div class="text">中心城市是网络的交汇点、商品的主要集散地，东南以临安、建康、镇江、平江、广州、泉州为枢纽，辐射乡村，海外。临安既南宋的政治中心，又是全国最大最繁荣的商业城市，长江中游最大的城市鄂州，南市在城外，沿江数万家。西南以成都为最。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box6" id="box6">
+                <div class="box-title">文化</div>
+                <div class="text">南宋是古代中国学术思想和文学艺术的巅峰时期。在贪图享受、胸无大志的背后，文化生活的丰富多彩将中国古代文化带入最为灿烂的发展时期。华裔学者刘子健认为:“此后中国近八百年来的文化，是以南宋文化为模式，以江浙一带为重点，形成了更加富有中国气派、中国风格的文化。”日本学者宫崎市定将宋代称为“东方的文艺复兴时代”。</div>
+                <div class="box6-jy">
+                    <div class="box6-jy-left"><img src="../upload/nswh-wh.png" alt=""></div>
+                    <div class="box6-jy-right">
+                        <div class="box-title-s">教育</div>
+                        <div class="text">南宋是古代中国文化教育的兴盛时期。南宋官学私学皆盛，彻底打破了长期以来士族地主垄断教育的局面，南宋的中央官学、地方官学、书院和私塾村校都获得了蓬勃的发展。临安的教育非常发达，太学、武学、算学、画学、医学等学校众多。</div>
+                    </div>
+                </div>
+                <div class="box6-sx">
+                    <div class="box-title-s">思想</div>
+                    <div class="text">南宋学术界先后形成了以朱熹为代表的道学，以陆九渊为代表的心学，以叶适为代表的永嘉学派，以吕祖谦为代表的婺学，以陈亮为代表的永康学派等主要学派开创了浙东学派的先河。南宋时期，学派之间互争雄，长和欣欣向荣的景象维持了近百年之久，形成了继春秋战国之后，中国历史上第二次“百家争鸣”的盛况。
+                    </div>
+                </div>
+            </div>
+            <div class="box box7" id="box7">
+                <div class="box-title">军事</div>
+                <img src="../upload/nswh-js-1.png" alt="">
+                <div class="box7-jsll">
+                    <div class="box-title-s">军事力量</div>
+                    <div class="text">南宋初期，重建军事力量乃为必然之举。立国伊始，南宋中央就选定了两种军事重建方式:一种为军事机构性的逐步重建;另一种是扶持中央所能控制的军事力量。
+                        <div class="text">南宋中央在招收溃兵、盗贼及勤王之兵等基础上，开始军事重建之路，于是有了岳家军、韩家军的出现。南宋中兴四将兵力的成型是中央军事力量重建的雏形。而金立伪齐刘豫是一个重要的转折点，为军事重建创造了良好的外部环境。各大军得以集中力量，消灭境内叛乱势力及农民起义军，最终形成四大帅的规模。绍兴五年(1135年)底，中兴几大帅的规模成型，但南宋中央并不能很好调度。故从绍兴六年（1136年)始，军事重建又步入一个新的阶段，任务转为收诸大将兵权。
+                        </div>
+                        <div class="text">其实从立国伊始，南宋中央就在培植亲近的军事势力，从御营司内的王渊，到神武副军的岳飞，皆是中央所扶持的力量，后只因岳飞势力发展太快，超出了中央所能控制的范围，中央才进而扶持神武军中的杨沂中，又拉拢张俊。至绍兴十一年(1141年)之时，中央所能控制的军马已颇为可观的情况下，己经具备收兵权的资本。因而南宋有收回张俊、韩世忠、岳飞三大将兵权的举动。最终在两种方式的综合作用下，南宋中央完成收兵权之举，在绍兴十二年(1142年)顺利完成军事重建。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box8" id="box8">
+                <div class="box-title">名将</div>
+                <div class="box8-picleft">
+                    <div class="box8-picleft-left"><img src="../upload/nswh-mj1.png" alt=""></div>
+                    <div class="box8-picleft-right">
+                        <div class="text">岳飞(1103——1142），字鹏举，相州汤阴人，南宋抗金名将，著名的军事家、战略家，民族英雄，南宋中兴四将之首。出身普通农家，北宋末年入伍从军，多次击败金兵。绍兴十年，完颜兀术攻宋，岳飞率军北伐，收复失地。然而宋高宗、秦桧却一意求和，以十二道“金字牌”下令退兵，接着遭受秦桧、张俊等人的诬陷，被捕入狱。以“莫须有”的“谋反”罪名被杀害。
+                            <br>【经典战役:郾城之战】
+                        </div>
+                    </div>
+                </div>
+                <div class="box8-picright">
+                    <div class="box8-picright-left">
+                        <div class="text">孟琪(1195年—1246年10月13日），字璞玉,随州枣阳人。南宋著名的抗金抗蒙名将。出身将门，曾祖孟安和祖父孟林是岳飞部属。孟琪早先率领宋军联合蒙古军队灭亡金国，南宋中期宋蒙战争爆发后，以一人之力统御南宋三分之二战线上的战事,对抗蒙古军队。其杰出表现被后世称为“机动防御大师”。淳祐六年辞官，不久去世。
+                            <br>【经典战役:灭金抗蒙，统御南宋三分之二战线上的战事】
+                        </div>
+                    </div>
+                    <div class="box8-picright-right"><img src="../upload/nswh-mj2.png" alt=""></div>
+                </div>
+                <div class="box8-picleft">
+                    <div class="box8-picleft-left"><img src="../upload/nswh-mj3.png" alt=""></div>
+                    <div class="box8-picleft-right">
+                        <div class="text">吴珍（1093年—1139年),字晋卿，德顺军陇干人,抗金名将。北宋末年入伍从军，多次击败西夏军队，参与征讨方腊,凭借战功多次升迁至泾原路马步军副总管。后来率军在富平对抗金兵,富平之战后退守和尚原,在和尚原以数千军卒大败十万金兵之后，又在仙人关数次击败金兵的入侵。绍兴九年，因为战功无数，授开府仪同三司。
+                            <br>【经典战役:和尚原之战】
+                        </div>
+                    </div>
+                </div>
+                <div class="box8-picright">
+                    <div class="box8-picright-left">
+                        <div class="text">韩世忠(1089年—1151年）,字良臣,延安人，南宋抗金名将，南宋中兴四将之一。出身贫寒，十八岁应募从军，作战勇敢，与西夏军、金军作战多年，屡立战功。宣和二年，跟随王渊平定方腊起义，后来率军平定苗刘兵变，解救宋高宗赵构,建炎三年，在黄天荡围困金朝大将完颜宗弼，数次击败金兵。绍兴四年，在大仪镇大败金兵。
+                            <br>【经典战役:黄天荡之战、水战】
+                        </div>
+                    </div>
+                    <div class="box8-picright-right"><img src="../upload/nswh-mj4.png" alt=""></div>
+                </div>
+                <div class="box8-picleft">
+                    <div class="box8-picleft-left"><img src="../upload/nswh-mj5.png" alt=""></div>
+                    <div class="box8-picleft-right">
+                        <div class="text">刘销（1098年一1162年2月25日)，字信叔，德顺军人，南宋抗金名将。出身将门，泸川军节度使刘仲武的第九子。早期与西夏的作战中多次获胜,建炎四年，率军参加富平之战，在伐夏抗金的过程中屡立功勋，于顺昌之战中大破金兀术军，官至太尉、威武军节度使。绍兴三十二年去世，赠开府仪同三司，谥号为武穆。
+                            <br>【经典战役:顺昌之战，1.8万——10万，城邑防御战】
+                        </div>
+                    </div>
+                </div>
+                <div class="box8-picright">
+                    <div class="box8-picright-left">
+                        <div class="text">虞允文(公元1110年—公元1174年)字彬甫，隆州仁寿人，绍兴年间进士，南宋大臣，抗金名将。绍兴三十一年，金海陵王完颜亮率军入侵，前线不断溃败，虞允文被派往采石犒赏军队，刚好金军想从采石渡江，见形势危急，虞允文亲自指挥军队,与金军决战于采石矶,大败金军。乾道八年，改任为左丞相兼枢密使。
+                            <br>【经典战役:采石之战，1.8万———17万，水战】
+                        </div>
+                    </div>
+                    <div class="box8-picright-right"><img src="../upload/nswh-mj6.png" alt=""></div>
+                </div>
+                <div class="box8-picright">
+                    <div class="box8-picright-left">
+                        <div class="text">毕再遇(1147年—1217年），字德卿，兖州人，南宋名将。出身将门，其父毕进官至武义大夫。开禧二年，跟随军队北伐,身先士卒，屡次大败金军，开禧北伐的军功第一嘉定元年，请求解甲归田，没有得到批准嘉定十年，辞去武信军节度使的官职，不久去世。死后追赠太尉，后来又追赠太师。谥号为忠毅。
+                            <br>【经典战役:六合之战,不详——10万，城邑防御战】
+                        </div>
+                    </div>
+                    <div class="box8-picright-right"><img src="../upload/nswh-mj7.png" alt=""></div>
+                </div>
+                <div class="box8-picleft">
+                    <div class="box8-picleft-left"><img src="../upload/nswh-mj8.png" alt=""></div>
+                    <div class="box8-picleft-right">
+                        <div class="text">王坚(1198—1264)，邓州彭桥人，南宋抗蒙名将。早先应募加入忠顺军，作战勇敢。蒙古军造船准备南侵，王坚秘密潜入造船之地，烧毁其船支二千余,崭露头角，成为孟琪部将，随孟琪入川抗击蒙古军队。开庆元年，蒙古大汗蒙哥亲率大军围攻合州，王坚与副将张珏坚守钓鱼城,多次击退蒙军的进攻。以功封为宁远军节度使。
+                            <br>【经典战役:钓鱼城之战——后续抵抗蒙古军队36年。】
+                        </div>
+                    </div>
+                </div>
+                <div class="box8-picright">
+                    <div class="box8-picright-left">
+                        <div class="text">余瑜(?—1253年），字义夫，蕲州人,南宋抗蒙名将。早先投入赵葵幕下，多次率军击败蒙古军队，被任命为兵部侍郎、四川安抚制置使兼知重庆府、四川总领兼夔路转运使。在蒙宋战争中，采纳冉氏兄弟的建议，以山城防御体系抗击蒙古军队，多次击退蒙古军队的入侵，后又率军多次击败蒙古军队。
+                            <br>【经典战役:防蜀之战】
+                        </div>
+                    </div>
+                    <div class="box8-picright-right"><img src="../upload/nswh-mj9.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!--foot-->
+        <footer class="aui-bar aui-bar-tab win_footer" id="footer">
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-sy" src="../images/icon-sy-on.png">
+                <a href="index.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">首页</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-qjns" src="../images/icon-qjns.png">
+                <a href="https://www.720yun.com/vr/59e249zu9ns">
+                    <div class="aui-bar-tab-label aui-tab-infro">全景南宋</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item color_blue">
+                <img class="bottom-icon icon-yqkz" src="../images/icon-yqkz.png">
+                <a href="yqkz.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">一起看展</div>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南宋官窑</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/aui.css">
+    <style>
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: 21.33333333px;
+            }
+        }
+        
+        @media screen and (min-width: 360px) {
+            html {
+                font-size: 24px;
+            }
+        }
+        
+        @media screen and (min-width: 375px) {
+            html {
+                font-size: 25px;
+            }
+        }
+        
+        @media screen and (min-width: 384px) {
+            html {
+                font-size: 25.6px;
+            }
+        }
+        
+        @media screen and (min-width: 400px) {
+            html {
+                font-size: 26.66666667px;
+            }
+        }
+        
+        @media screen and (min-width: 414px) {
+            html {
+                font-size: 27.6px;
+            }
+        }
+        
+        @media screen and (min-width: 424px) {
+            html {
+                font-size: 28.26666667px;
+            }
+        }
+        
+        @media screen and (min-width: 480px) {
+            html {
+                font-size: 32px;
+            }
+        }
+        
+        @media screen and (min-width: 540px) {
+            html {
+                font-size: 36px;
+            }
+        }
+        
+        @media screen and (min-width: 720px) {
+            html {
+                font-size: 48px;
+            }
+        }
+        
+        @media screen and (min-width: 750px) {
+            html {
+                font-size: 50px;
+            }
+        }
+        
+        body {
+            min-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+            line-height: 1.5;
+            font-family: Arial, Helvetica;
+            background-color: #fff;
+        }
+        /* banner */
+        
+        .all {
+            width: 15.25rem;
+            position: fixed;
+            background-color: #fff;
+        }
+        
+        .banner {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 1.8rem;
+            margin-top: 2rem;
+            padding: 0 1rem;
+            text-align: center;
+            /* padding-top: 0.7rem; */
+        }
+        
+        .banner-icon {
+            flex: 1;
+            margin-top: 0.3rem;
+        }
+        
+        .banner-title {
+            flex: 5;
+            font-size: 1.2rem;
+            font-family: 隶书;
+            color: #a6362c;
+        }
+        
+        .banner img {
+            width: auto;
+            height: 1rem;
+            margin: 0 auto;
+        }
+        
+        .search-box {
+            width: 85%;
+            height: 1.6rem;
+            margin: 0.6rem auto;
+            /* border-radius: 1rem;
+            background-color: white; */
+        }
+        
+        .search-box input {
+            outline: none;
+            height: 1.4rem;
+            width: 100%;
+            border: 0;
+            color: #ccc;
+            text-align: center;
+            border-radius: 0.5rem;
+            border: 0.02rem solid #ccc;
+            background-color: white;
+        }
+        
+        .top {
+            position: relative;
+            width: 100%;
+            margin: 0rem auto;
+            padding: 0.5rem 1.5rem 1rem 1.5rem;
+            box-shadow: 0rem 0.2rem 0.2rem #999;
+            z-index: 100;
+        }
+        /* .search-box div img {
+            height: 1.2rem;
+        } */
+        /* content */
+        
+        .content {
+            width: 100%;
+            height: 43rem;
+            margin: 0 auto;
+            /* margin-top: 1rem; */
+            padding-top: 17rem;
+            /* border-radius: 2rem 2rem 0 0; */
+            background-color: #e2d2b5;
+            z-index: -1;
+        }
+        
+        .content-tag {
+            width: 100%;
+            /* padding: 1%; */
+            margin: 0 6%;
+        }
+        
+        .content-tag ul li {
+            float: left;
+            width: 43%;
+            height: 6rem;
+            margin-bottom: 3%;
+            padding: 2% 1% 1%;
+            text-align: center;
+            border-radius: 1rem;
+            background-color: #f9f6f2;
+        }
+        
+        .content-tag ul li:nth-child(2n) {
+            margin-left: 2%;
+        }
+        
+        .content-pic {
+            margin: 0 auto;
+            margin-top: 0.4rem;
+            height: 60%;
+            width: 100%;
+        }
+        
+        .content-pic img {
+            max-height: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .pic1 {
+            padding-top: 0.4rem;
+        }
+        
+        .pic5 {
+            padding-top: 1.5rem;
+        }
+        
+        .pic6 {
+            padding-top: 2rem;
+        }
+        
+        .name {
+            margin-top: 0.6rem;
+            font-family: 隶书;
+            font-size: 0.55rem;
+            color: #a6362c;
+        }
+        /* footer */
+        
+        #footer {
+            padding: 0 1rem;
+        }
+        
+        #footer div a {
+            color: #666;
+        }
+        
+        .aui-bar {
+            background-color: #f4e6d0;
+        }
+        
+        .bottom-icon {
+            width: 28%;
+            height: auto;
+            margin: 0.3rem auto;
+            padding-top: 0.15rem;
+        }
+        
+        body {
+            width: 15.25rem;
+            margin: 0 auto;
+            /* margin-top: 6rem; */
+            background-color: #fff;
+        }
+        
+        .all-content {
+            height: 30rem;
+            overflow-y: auto;
+            background-color: #fcf9f2;
+        }
+        
+        #footer {
+            width: 15.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 29.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-content">
+        <!-- banner -->
+        <div class="all">
+            <div class="banner">
+                <a href="index.html" class="banner-icon"><img src="../images/icon-back-red.png" alt=""></a>
+                <h1 class="banner-title">南宋官窑</h1>
+                <a href="#" class="banner-icon"></a>
+            </div>
+            <div class="search-box"><input type="search" value="搜索">
+                <!-- <div class="icon"><img src="../images/icon-search.png" alt=""></div> -->
+            </div>
+            <div class="top"><img src="../upload/nsgy-top.png" alt=""></div>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <div class="content-tag one">
+                <ul>
+                    <li>
+                        <a href="nsgy-pic1.html">
+                            <div class="content-pic pic1"><img src="../upload/nsgy-pic1.png" alt=""></div>
+                            <div class="name">龙泉窑粉青釉瓷鬲式炉 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nsgy-pic2.html">
+                            <div class="content-pic pic2"><img src="../upload/nsgy-pic2.png" alt=""></div>
+                            <div class="name">双鱼纹折沿盘 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nsgy-pic3.html">
+                            <div class="content-pic pic3"><img src="../upload/nsgy-pic3.png" alt=""></div>
+                            <div class="name">官窑青釉葵辫洗 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nsgy-pic4.html">
+                            <div class="content-pic pic4"><img src="../upload/nsgy-pic4.png" alt=""></div>
+                            <div class="name">官窑粉胥釉弦纹瓶 </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-tag two">
+                <ul>
+                    <li>
+                        <a href="nsgy-pic5.html">
+                            <div class="content-pic pic5"><img src="../upload/nsgy-pic5.png" alt=""></div>
+                            <div class="name">青瓷莲瓣碗 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nsgy-pic6.html">
+                            <div class="content-pic pic6"><img src="../upload/nsgy-pic6.png" alt=""></div>
+                            <div class="name">吉州窑木叶盏 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nsgy-pic7.html">
+                            <div class="content-pic pic7"><img src="../upload/nsgy-pic7.png" alt=""></div>
+                            <div class="name">黑釉剔梅花纹瓶 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nsgy-pic8.html">
+                            <div class="content-pic pic8"><img src="../upload/nsgy-pic8.png" alt=""></div>
+                            <div class="name">彩绘荷莲长颈瓶 </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--foot-->
+        <footer class="aui-bar aui-bar-tab win_footer" id="footer">
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-sy" src="../images/icon-sy-on.png">
+                <a href="index.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">首页</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-qjns" src="../images/icon-qjns.png">
+                <a href="https://www.720yun.com/vr/59e249zu9ns">
+                    <div class="aui-bar-tab-label aui-tab-infro">全景南宋</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item color_blue">
+                <img class="bottom-icon icon-yqkz" src="../images/icon-yqkz.png">
+                <a href="yqkz.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">一起看展</div>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史展览</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/aui.css">
+    <style>
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: 21.33333333px;
+            }
+        }
+        
+        @media screen and (min-width: 360px) {
+            html {
+                font-size: 24px;
+            }
+        }
+        
+        @media screen and (min-width: 375px) {
+            html {
+                font-size: 25px;
+            }
+        }
+        
+        @media screen and (min-width: 384px) {
+            html {
+                font-size: 25.6px;
+            }
+        }
+        
+        @media screen and (min-width: 400px) {
+            html {
+                font-size: 26.66666667px;
+            }
+        }
+        
+        @media screen and (min-width: 414px) {
+            html {
+                font-size: 27.6px;
+            }
+        }
+        
+        @media screen and (min-width: 424px) {
+            html {
+                font-size: 28.26666667px;
+            }
+        }
+        
+        @media screen and (min-width: 480px) {
+            html {
+                font-size: 32px;
+            }
+        }
+        
+        @media screen and (min-width: 540px) {
+            html {
+                font-size: 36px;
+            }
+        }
+        
+        @media screen and (min-width: 720px) {
+            html {
+                font-size: 48px;
+            }
+        }
+        
+        @media screen and (min-width: 750px) {
+            html {
+                font-size: 50px;
+            }
+        }
+        
+        body {
+            min-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+            line-height: 1.5;
+            font-family: Arial, Helvetica;
+            background-color: #f2e8db;
+        }
+        /* banner */
+        
+        .banner {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 1.8rem;
+            margin-top: 1.4rem;
+            text-align: center;
+            /* padding-top: 0.7rem; */
+        }
+        
+        .banner-icon {
+            flex: 1;
+            margin-top: 0.3rem;
+        }
+        
+        .banner-title {
+            flex: 5;
+            font-size: 1rem;
+            font-family: 华文隶书;
+            color: #a6362c;
+        }
+        
+        .banner img {
+            width: auto;
+            height: 0.9rem;
+            margin: 0 auto;
+        }
+        
+        .search-box {
+            width: 86%;
+            height: 1rem;
+            margin: 0rem auto;
+            /* border-radius: 1rem;
+            background-color: white; */
+        }
+        
+        .search-box input {
+            outline: none;
+            height: 1.2rem;
+            width: 100%;
+            border: 0;
+            font-size: 0.6rem;
+            color: #ccc;
+            text-align: center;
+            border-radius: 1rem;
+            background-color: white;
+        }
+        /* content */
+        
+        .content {
+            width: 100%;
+            height: 30rem;
+            margin: 0 auto;
+            margin-top: 0.8rem;
+            padding: 0 1rem;
+            /* padding: 1rem 1.3rem 0 1.8rem; */
+            /* border-radius: 2rem 2rem 0 0; */
+            /* background-color: #fffffb; */
+        }
+        
+        .content-tag {
+            /* display: flex; */
+            width: 100%;
+            height: 8.5rem;
+            margin-bottom: 0.6rem;
+            /* padding: 1rem; */
+            /* border-radius: 1rem; */
+            /* background-color: bisque; */
+        }
+        
+        .top {
+            height: 85%;
+            padding: 0.3rem 0.7rem;
+            border-radius: 1rem;
+            background-color: #fffffb;
+        }
+        
+        .title {
+            float: right;
+            padding-top: 0.1rem;
+            font-size: 0.75rem;
+            font-family: 隶书;
+            letter-spacing: -0.05rem;
+            color: #a6362c;
+        }
+        
+        .top-content {
+            display: flex;
+            height: 75%;
+            width: 100%;
+            padding-top: 0.2rem;
+        }
+        
+        .text {
+            padding-right: 0.4rem;
+            flex: 7;
+            /* background-color: lightcoral; */
+        }
+        
+        .text2 {
+            padding-top: 1rem;
+        }
+        
+        .introduction {
+            /* margin-top: 0.1rem; */
+            font-size: 0.5rem;
+            font-family: 华文中宋;
+            /* text-indent: 1rem; */
+            line-height: 0.6rem;
+            color: #666;
+        }
+        
+        .moreinfo {
+            margin-top: 0.3rem;
+            font-size: 0.45rem;
+            font-family: 华文中宋;
+            /* text-indent: 1rem; */
+            line-height: 0.6rem;
+            color: #999;
+        }
+        
+        .moreinfo span {
+            font-size: 0.3rem;
+        }
+        
+        .pic {
+            flex: 3;
+        }
+        
+        .pic img {
+            float: right;
+            height: 100%;
+            /* margin: 0 auto; */
+        }
+        
+        .interact {
+            height: 15%;
+            border-bottom: 0.01rem solid #999;
+        }
+        
+        .interact ul {
+            display: flex;
+            height: 100%;
+            padding-top: 0.2rem;
+            justify-content: space-around;
+        }
+        
+        .interact ul li div {
+            height: 80%;
+            float: left;
+            font-size: 0.55rem;
+            font-family: 仿宋;
+            text-align: center;
+        }
+        
+        .interact ul li div:nth-child(2) {
+            margin-left: 0.2rem;
+        }
+        
+        .interact ul li div img {
+            height: 100%;
+            /* margin: 0 auto; */
+        }
+        /* footer */
+        
+        #footer {
+            padding: 0 1rem;
+        }
+        
+        #footer div a {
+            color: #666;
+        }
+        
+        .aui-bar {
+            background-color: #f4e6d0;
+        }
+        
+        .bottom-icon {
+            width: 28%;
+            height: auto;
+            margin: 0.3rem auto;
+            padding-top: 0.15rem;
+        }
+        
+        body {
+            width: 15.25rem;
+            margin: 0 auto;
+            /* margin-top: 6rem; */
+            background-color: #fff;
+        }
+        
+        .all-content {
+            height: 31.8rem;
+            overflow-y: auto;
+            background-color: #f2e8db;
+        }
+        
+        #footer {
+            width: 15.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 29.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-content">
+        <!-- banner -->
+        <div class="banner">
+            <a href="index.html" class="banner-icon"><img src="../images/icon-back-red.png" alt=""></a>
+            <h1 class="banner-title">历史展览</h1>
+            <a href="#" class="banner-icon"><img src="../images/icon-share.png" alt=""></a>
+        </div>
+        <div class="search-box"><input type="search" value="搜索">
+            <!-- <div class="icon"><img src="../images/icon-search.png" alt=""></div> -->
+        </div>
+        <!-- content -->
+        <div class="content">
+            <div class="content-tag">
+                <div class="top">
+                    <div class="title">[行在山水间——南宋视野下的杭州] </div>
+                    <div class="top-content">
+                        <div class="text">
+                            <div class="introduction">简介:展览以40余年来南宋临安城考古发现为主线，用文物藏品，制作数字展顶、多媒体解读，试图用图文并茂的多元形式，将临安城再现给观众…… </div>
+                            <div class="moreinfo">时间:
+                                <span>2022.8.27--2023.1.3</span><br> 地址：<span>南宋官窑博物馆</span>
+                            </div>
+                        </div>
+                        <div class="pic"><img src="../upload/lszl-pic1.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="interact">
+                    <ul>
+                        <li>
+                            <div><img src="../images/icon-transimit.png" alt=""></div>
+                            <div>245</div>
+                        </li>
+                        <li>
+                            <div><img src="../images/icon-comment.png" alt=""></div>
+                            <div>456</div>
+                        </li>
+                        <li>
+                            <div><img src="../images/icon-like-red.png" alt=""></div>
+                            <div>203</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-tag">
+                <div class="top">
+                    <div class="title">[宋韵千年——百馆联动展首站] </div>
+                    <div class="top-content">
+                        <div class="text">
+                            <div class="introduction">简介:展览整合提炼两宋文化，展出具有宋韵风貌的文物、现代工艺美术大师瓷艺精品…… </div>
+                            <div class="moreinfo text2">时间:
+                                <span>2022.7.26--2022.9.22</span><br> 地址：<span>南宋官窑博物馆</span>
+                            </div>
+                        </div>
+                        <div class="pic"><img src="../upload/lszl-pic2.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="interact">
+                    <ul>
+                        <li>
+                            <div><img src="../images/icon-transimit.png" alt=""></div>
+                            <div>876</div>
+                        </li>
+                        <li>
+                            <div><img src="../images/icon-comment.png" alt=""></div>
+                            <div>245</div>
+                        </li>
+                        <li>
+                            <div><img src="../images/icon-like-black.png" alt=""></div>
+                            <div>964</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-tag">
+                <div class="top">
+                    <div class="title">[弄青影——南宋青瓷造物美学侧记] </div>
+                    <div class="top-content">
+                        <div class="text">
+                            <div class="introduction">简介:展览通过南宋青瓷与当代青瓷的对比，在一抹青影中与众共赏宋人造物之美，主要从“古物说”“造物说”等方面来展示…… </div>
+                            <div class="moreinfo">时间:
+                                <span>2021.1.26--2021.5.23</span><br> 地址:<span>杭州西湖博物馆总馆南宋官窑馆区</span>
+                            </div>
+                        </div>
+                        <div class="pic"><img src="../upload/lszl-pic3.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="interact">
+                    <ul>
+                        <li>
+                            <div><img src="../images/icon-transimit.png" alt=""></div>
+                            <div>203</div>
+                        </li>
+                        <li>
+                            <div><img src="../images/icon-comment.png" alt=""></div>
+                            <div>203</div>
+                        </li>
+                        <li>
+                            <div><img src="../images/icon-like-red.png" alt=""></div>
+                            <div>203</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="aui-bar aui-bar-tab win_footer" id="footer">
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-sy" src="../images/icon-sy-on.png">
+                <a href="index.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">首页</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-qjns" src="../images/icon-qjns.png">
+                <a href="https://www.720yun.com/vr/59e249zu9ns">
+                    <div class="aui-bar-tab-label aui-tab-infro">全景南宋</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item color_blue">
+                <img class="bottom-icon icon-yqkz" src="../images/icon-yqkz.png">
+                <a href="yqkz.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">一起看展</div>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南宋书画-双喜图</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/aui.css">
+    <style>
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: 21.33333333px;
+            }
+        }
+        
+        @media screen and (min-width: 360px) {
+            html {
+                font-size: 24px;
+            }
+        }
+        
+        @media screen and (min-width: 375px) {
+            html {
+                font-size: 25px;
+            }
+        }
+        
+        @media screen and (min-width: 384px) {
+            html {
+                font-size: 25.6px;
+            }
+        }
+        
+        @media screen and (min-width: 400px) {
+            html {
+                font-size: 26.66666667px;
+            }
+        }
+        
+        @media screen and (min-width: 414px) {
+            html {
+                font-size: 27.6px;
+            }
+        }
+        
+        @media screen and (min-width: 424px) {
+            html {
+                font-size: 28.26666667px;
+            }
+        }
+        
+        @media screen and (min-width: 480px) {
+            html {
+                font-size: 32px;
+            }
+        }
+        
+        @media screen and (min-width: 540px) {
+            html {
+                font-size: 36px;
+            }
+        }
+        
+        @media screen and (min-width: 720px) {
+            html {
+                font-size: 48px;
+            }
+        }
+        
+        @media screen and (min-width: 750px) {
+            html {
+                font-size: 50px;
+            }
+        }
+        
+        body {
+            min-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+            line-height: 1.5;
+            font-family: Arial, Helvetica;
+            background-color: #f9f6f2;
+        }
+        /* banner */
+        
+        .banner {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 1.8rem;
+            margin-top: 1.9rem;
+            text-align: center;
+            padding-top: 0.1rem;
+            background-color: #fff;
+        }
+        
+        .banner-icon {
+            flex: 1;
+            margin-top: 0.3rem;
+        }
+        
+        .banner-title {
+            flex: 5;
+            font-size: 1rem;
+            font-family: 华文隶书;
+            color: #a6362c;
+        }
+        
+        .banner img {
+            width: auto;
+            height: 0.9rem;
+            margin: 0 auto;
+        }
+        /* content */
+        
+        .content {
+            width: 100%;
+            /* height: 40rem; */
+            margin: 0 auto;
+            background-color: white;
+        }
+        
+        .content-top {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem 0.5rem 1.5rem 1.1rem;
+            /* background-color: white; */
+        }
+        
+        .left {
+            flex: 8;
+        }
+        
+        .right {
+            flex: 5;
+        }
+        
+        .title {
+            margin-top: 1rem;
+            font-size: 1rem;
+            font-family: 隶书;
+            color: #a6362c;
+            text-align: center;
+        }
+        
+        .text {
+            margin-left: 1rem;
+            margin-top: 1rem;
+            font-size: 0.4rem;
+            font-family: 等线;
+            color: #000;
+        }
+        
+        .right-bottom {
+            margin-top: 2.5rem;
+            text-align: center;
+        }
+        
+        .right-bottom img {
+            height: 1.1rem;
+            /* width: 3rem; */
+            margin: 0 auto;
+        }
+        
+        .comment {
+            height: 12rem;
+            border-radius: 2rem 2rem 0 0;
+            margin-top: 1.2rem;
+            padding: 1rem 1.2rem;
+            background-color: #fff7ee;
+            z-index: -10;
+        }
+        
+        .comment-title {
+            position: relative;
+            font-size: 0.9rem;
+            font-family: 方正姚体;
+            /* font-weight: 600; */
+            z-index: 10;
+        }
+        
+        .comment-title:after {
+            content: "";
+            position: absolute;
+            left: 0.8rem;
+            top: 0.8rem;
+            width: 15%;
+            height: 0.7rem;
+            border-radius: 0.4rem;
+            background-color: #f4e6d0;
+            z-index: -1;
+        }
+        
+        .comment-text {
+            position: relative;
+            margin-top: 0.8rem;
+            font-size: 0.5rem;
+            font-family: 等线;
+            text-indent: 1rem;
+            line-height: 0.6rem;
+            color: #888;
+            z-index: 10;
+        }
+        
+        .comment-text:after {
+            content: "";
+            position: absolute;
+            left: 42%;
+            top: -3rem;
+            width: 15%;
+            height: 0.15rem;
+            border-radius: 0.4rem;
+            background-color: #e4e4e4;
+            z-index: -1;
+        }
+        /* footer */
+        
+        #footer {
+            padding: 0 1rem;
+        }
+        
+        #footer div a {
+            color: #666;
+        }
+        
+        .aui-bar {
+            background-color: #f4e6d0;
+        }
+        
+        .bottom-icon {
+            width: 28%;
+            height: auto;
+            margin: 0.3rem auto;
+            padding-top: 0.15rem;
+        }
+        
+        body {
+            width: 15.25rem;
+            margin: 0 auto;
+            /* margin-top: 6rem; */
+            background-color: #fff;
+        }
+        
+        .all-content {
+            height: 30rem;
+            overflow-y: auto;
+            background-color: #fcf9f2;
+        }
+        
+        #footer {
+            width: 15.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 29.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-content">
+        <!-- banner -->
+        <div class="banner">
+            <a href="nssh.html" class="banner-icon"><img src="../images/icon-back-red.png" alt=""></a>
+            <h1 class="banner-title">详情</h1>
+            <a href="#" class="banner-icon search-tea"><img src="../images/icon-share.png" alt=""></a>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <div class="content-top">
+                <div class="left tag"><img src="../upload/sxt.png" alt=""></div>
+                <div class="right tag">
+                    <div class="title">《双喜图》</div>
+                    <div class="text">画家介绍：<br>崔白（1004年-1088年），字子西，安徽濠州人，北宋画家，晚年入画院。</div>
+                    <div class="right-bottom"><img src="../images/icon-favorite.png" alt=""></div>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-title">品评</div>
+                <div class="comment-text">作品中充满野逸的审美情趣。用笔用墨因质随形，针对客观对象的质感采用不同的表现手法，或奔放，或细腻，依景生形，依形妙造，形神并至，笔境兼夺。画中的主体物兔子和喜鹊，形成一动一静、动静相生的视觉美感。构图上前后纵深推拉适度，景境幽静清远。兔子的造型别致，既符合物理结构又有艺术的夸张。作为大器晚成的崔白，或许将某种人生的舛顺经历和愉悦的情致融入到了这幅旷世杰作之中，在荆棘遍布的蹊径中，在秋风萧瑟的郊野里，一种莫名的孤独感被忽然从天而降的喜悦所取代，惊喜之余，以一种从容的态度，怅然回首，瞭望晴空，在风烛之年，实现大器晚成的丹青夙愿，值得后人回味。
+                </div>
+            </div>
+        </div>
+        <!--foot-->
+        <footer class="aui-bar aui-bar-tab win_footer" id="footer">
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-sy" src="../images/icon-sy-on.png">
+                <a href="index.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">首页</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-qjns" src="../images/icon-qjns.png">
+                <a href="https://www.720yun.com/vr/59e249zu9ns">
+                    <div class="aui-bar-tab-label aui-tab-infro">全景南宋</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item color_blue">
+                <img class="bottom-icon icon-yqkz" src="../images/icon-yqkz.png">
+                <a href="yqkz.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">一起看展</div>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

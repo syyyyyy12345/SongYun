@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热门推荐</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/aui.css">
+    <style>
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: 21.33333333px;
+            }
+        }
+        
+        @media screen and (min-width: 360px) {
+            html {
+                font-size: 24px;
+            }
+        }
+        
+        @media screen and (min-width: 375px) {
+            html {
+                font-size: 25px;
+            }
+        }
+        
+        @media screen and (min-width: 384px) {
+            html {
+                font-size: 25.6px;
+            }
+        }
+        
+        @media screen and (min-width: 400px) {
+            html {
+                font-size: 26.66666667px;
+            }
+        }
+        
+        @media screen and (min-width: 414px) {
+            html {
+                font-size: 27.6px;
+            }
+        }
+        
+        @media screen and (min-width: 424px) {
+            html {
+                font-size: 28.26666667px;
+            }
+        }
+        
+        @media screen and (min-width: 480px) {
+            html {
+                font-size: 32px;
+            }
+        }
+        
+        @media screen and (min-width: 540px) {
+            html {
+                font-size: 36px;
+            }
+        }
+        
+        @media screen and (min-width: 720px) {
+            html {
+                font-size: 48px;
+            }
+        }
+        
+        @media screen and (min-width: 750px) {
+            html {
+                font-size: 50px;
+            }
+        }
+        
+        body {
+            min-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+            line-height: 1.5;
+            font-family: Arial, Helvetica;
+            background-color: #f2e8db;
+        }
+        /* banner */
+        
+        .banner {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 1.8rem;
+            margin-top: 1.4rem;
+            text-align: center;
+            /* padding-top: 0.7rem; */
+        }
+        
+        .banner-icon {
+            flex: 1;
+            margin-top: 0.3rem;
+        }
+        
+        .banner-title {
+            flex: 5;
+            font-size: 1rem;
+            font-family: 华文隶书;
+            color: #a6362c;
+        }
+        
+        .banner img {
+            width: auto;
+            height: 0.9rem;
+            margin: 0 auto;
+        }
+        
+        .search-box {
+            width: 90%;
+            height: 1rem;
+            margin: 0rem auto;
+            /* border-radius: 1rem;
+            background-color: white; */
+        }
+        
+        .search-box input {
+            outline: none;
+            height: 1rem;
+            width: 100%;
+            border: 0;
+            font-size: 0.6rem;
+            color: #ccc;
+            text-align: center;
+            border-radius: 1rem;
+            background-color: white;
+        }
+        /* .search-box div img {
+            height: 1.2rem;
+        } */
+        
+        .classify {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0.8rem 1rem 0.5rem 1rem;
+            height: 1.2rem;
+            /* background-color: turquoise; */
+            text-align: center;
+        }
+        
+        .tag {
+            width: 3.5rem;
+            border-radius: 0.5rem;
+            font-size: 0.7rem;
+            font-family: 隶书;
+            color: #a6362c;
+        }
+        
+        .one {
+            background-color: #dfd0b4;
+        }
+        /* content */
+        
+        .content {
+            width: 100%;
+            height: 24.5rem;
+            margin: 0 auto;
+            /* margin-top: 1rem; */
+            padding: 1rem 1.3rem 0 1.8rem;
+            border-radius: 2rem 2rem 0 0;
+            background-color: #fffffb;
+        }
+        
+        .content-tag {
+            display: flex;
+            width: 100%;
+            height: 6.5rem;
+            margin-bottom: 1rem;
+            /* background-color: bisque; */
+        }
+        
+        .content-tag div {
+            flex: 1;
+        }
+        
+        .left {
+            position: relative;
+            height: 100%;
+            margin-top: 0.3rem;
+            /* padding-right: 1rem; */
+            /* border-right: 0.01rem solid #999; */
+        }
+        
+        .left:before {
+            content: "";
+            position: absolute;
+            left: 100%;
+            top: 1.2rem;
+            width: 0.01rem;
+            height: 80%;
+            background-color: #ccc;
+        }
+        
+        .left img {
+            height: 100%;
+        }
+        
+        .right {
+            margin-left: 0.8rem;
+        }
+        
+        .title {
+            position: relative;
+            font-family: 华文中宋;
+            font-size: 0.7rem;
+            z-index: 10;
+        }
+        
+        .title:after {
+            content: "";
+            position: absolute;
+            left: 0.5rem;
+            top: 0.4rem;
+            width: 55%;
+            height: 0.7rem;
+            border-radius: 0.3rem;
+            background-color: #d9d0ba;
+            z-index: -1;
+        }
+        
+        .text {
+            position: relative;
+            margin-top: 0.8rem;
+            font-size: 0.4rem;
+            line-height: 0.6rem;
+            font-family: 等线;
+            color: #666;
+        }
+        
+        .text:before {
+            content: "";
+            position: absolute;
+            left: 0.3rem;
+            top: -0.5rem;
+            width: 90%;
+            height: 0.01rem;
+            background-color: #ccc;
+        }
+        /* footer */
+        
+        #footer {
+            padding: 0 1rem;
+        }
+        
+        #footer div a {
+            color: #666;
+        }
+        
+        .aui-bar {
+            background-color: #f4e6d0;
+        }
+        
+        .bottom-icon {
+            width: 28%;
+            height: auto;
+            margin: 0.3rem auto;
+            padding-top: 0.15rem;
+        }
+        
+        body {
+            width: 15.25rem;
+            margin: 0 auto;
+            /* margin-top: 6rem; */
+            background-color: #fff;
+        }
+        
+        .all-content {
+            height: 31.8rem;
+            overflow-y: auto;
+            background-color: #f2e8db;
+        }
+        
+        #footer {
+            width: 15.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 29.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-content">
+        <!-- banner -->
+        <div class="banner">
+            <a href="index.html" class="banner-icon"><img src="../images/icon-back-red.png" alt=""></a>
+            <h1 class="banner-title">热门推荐</h1>
+            <a href="#" class="banner-icon"><img src="../images/icon-add-red.png" alt=""></a>
+        </div>
+        <div class="search-box"><input type="search" value="搜索">
+            <!-- <div class="icon"><img src="../images/icon-search.png" alt=""></div> -->
+        </div>
+        <div class="classify">
+            <div class="tag one">新忆杭西</div>
+            <a href="lszl.html">
+                <div class="tag two">历史展览</div>
+            </a>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <div class="content-tag">
+                <div class="left"><img src="../upload/hot-recommend-gy.png" alt=""></div>
+                <div class="right">
+                    <div class="title">南宋官窑
+                    </div>
+                    <div class="text">南宋官窑是官方的烧制瓷器的窑场，南宋时期劳动人民的制瓷技术有许多创造和进步。南宋建都临安时，建立修内司、郊坛下窑，生产官廷专用御品，故称“南宋官窑”……
+                    </div>
+                </div>
+            </div>
+            <div class="content-tag">
+                <div class="left"><img src="../upload/hot-recommend-jz.png" alt=""></div>
+                <div class="right">
+                    <div class="title">南宋建筑
+                    </div>
+                    <div class="text">南宋建筑风格的特点是多以整齐划一的空间布局，纯色彩的背景和亚麻或帆布等质地的家具搭配组成折射出现代简约的精神主义，建筑装饰上很少刻花，而流行用贴花、浮雕……
+                    </div>
+                </div>
+            </div>
+            <div class="content-tag">
+                <div class="left"><img src="../upload/hot-recommend-fs.png" alt=""></div>
+                <div class="right">
+                    <div class="title">南宋服饰
+                    </div>
+                    <div class="text">宋代织锦以成都蜀锦最有名，花纹有组合型儿何纹的八搭晕、六搭晕、盘毯等。几个填花的葵花、簇四金雕、大窠马打毯、雪花毯路、双窠云雁等……
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="aui-bar aui-bar-tab win_footer" id="footer">
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-sy" src="../images/icon-sy-on.png">
+                <a href="index.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">首页</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-qjns" src="../images/icon-qjns.png">
+                <a href="https://www.720yun.com/vr/59e249zu9ns">
+                    <div class="aui-bar-tab-label aui-tab-infro">全景南宋</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item color_blue">
+                <img class="bottom-icon icon-yqkz" src="../images/icon-yqkz.png">
+                <a href="yqkz.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">一起看展</div>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南宋建筑-南宋御街</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/aui.css">
+    <style>
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: 21.33333333px;
+            }
+        }
+        
+        @media screen and (min-width: 360px) {
+            html {
+                font-size: 24px;
+            }
+        }
+        
+        @media screen and (min-width: 375px) {
+            html {
+                font-size: 25px;
+            }
+        }
+        
+        @media screen and (min-width: 384px) {
+            html {
+                font-size: 25.6px;
+            }
+        }
+        
+        @media screen and (min-width: 400px) {
+            html {
+                font-size: 26.66666667px;
+            }
+        }
+        
+        @media screen and (min-width: 414px) {
+            html {
+                font-size: 27.6px;
+            }
+        }
+        
+        @media screen and (min-width: 424px) {
+            html {
+                font-size: 28.26666667px;
+            }
+        }
+        
+        @media screen and (min-width: 480px) {
+            html {
+                font-size: 32px;
+            }
+        }
+        
+        @media screen and (min-width: 540px) {
+            html {
+                font-size: 36px;
+            }
+        }
+        
+        @media screen and (min-width: 720px) {
+            html {
+                font-size: 48px;
+            }
+        }
+        
+        @media screen and (min-width: 750px) {
+            html {
+                font-size: 50px;
+            }
+        }
+        
+        body {
+            min-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+            line-height: 1.5;
+            font-family: Arial, Helvetica;
+            background-color: #f9f6f2;
+        }
+        /* banner */
+        
+        .banner {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 1.8rem;
+            margin-top: 2rem;
+            text-align: center;
+            /* padding-top: 0.7rem; */
+        }
+        
+        .banner-icon {
+            flex: 1;
+            margin-top: 0.3rem;
+        }
+        
+        .banner-title {
+            flex: 5;
+            font-size: 1rem;
+            font-family: 华文隶书;
+            color: #a6362c;
+        }
+        
+        .banner img {
+            width: auto;
+            height: 0.9rem;
+            margin: 0 auto;
+        }
+        /* content */
+        
+        .content {
+            width: 100%;
+            height: 40rem;
+            margin: 0 auto;
+            /* background-color: white; */
+        }
+        
+        .content-top {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            padding: 1rem 1.5rem 1.5rem 1.5rem;
+            /* background-color: white; */
+        }
+        
+        .title {
+            margin-top: 1rem;
+            font-size: 1rem;
+            font-family: 隶书;
+            color: #a6362c;
+            text-align: center;
+        }
+        
+        .text {
+            margin-top: 1rem;
+            font-size: 0.4rem;
+            font-family: 仿宋;
+        }
+        
+        .right-bottom {
+            margin-top: 1rem;
+            text-align: center;
+        }
+        
+        .right-bottom img {
+            height: 1.5rem;
+            margin: 0 auto;
+        }
+        
+        .comment {
+            height: 34rem;
+            border-radius: 2rem 2rem 0 0;
+            margin: 0 1rem;
+            padding: 2rem 1rem;
+            background-color: #fff;
+            z-index: -10;
+        }
+        
+        .comment-favorite {
+            float: right;
+        }
+        
+        .comment-favorite img {
+            margin-top: 0.8rem;
+            height: 1rem;
+        }
+        
+        .comment-title {
+            position: relative;
+            font-size: 1rem;
+            font-family: 华文仿宋;
+            font-weight: 600;
+            z-index: 10;
+        }
+        
+        .comment-title:after {
+            content: "";
+            position: absolute;
+            left: 1.3rem;
+            top: 0.8rem;
+            width: 32%;
+            height: 0.9rem;
+            border-radius: 0.4rem;
+            background-color: #f4e6d0;
+            z-index: -1;
+        }
+        
+        .comment-En {
+            margin-top: 0.4rem;
+            font-size: 0.4rem;
+            font-family: 华文仿宋;
+        }
+        
+        .comment-text {
+            position: relative;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            font-size: 0.4rem;
+            color: #888;
+            border-top: 0.02rem solid #ccc;
+            z-index: 10;
+        }
+        
+        .comment-text:after {
+            content: "";
+            position: absolute;
+            left: 42%;
+            top: -5.6rem;
+            width: 15%;
+            height: 0.2rem;
+            border-radius: 0.4rem;
+            background-color: #e4e4e4;
+            z-index: -1;
+        }
+        
+        .comment-context {
+            text-indent: 1rem;
+        }
+        /* footer */
+        
+        #footer {
+            padding: 0 1rem;
+        }
+        
+        #footer div a {
+            color: #666;
+        }
+        
+        .aui-bar {
+            background-color: #f4e6d0;
+        }
+        
+        .bottom-icon {
+            width: 28%;
+            height: auto;
+            margin: 0.3rem auto;
+            padding-top: 0.15rem;
+        }
+        
+        body {
+            width: 15.25rem;
+            margin: 0 auto;
+            /* margin-top: 6rem; */
+            background-color: #fff;
+        }
+        
+        .all-content {
+            height: 30rem;
+            overflow-y: auto;
+            background-color: #fcf9f2;
+        }
+        
+        #footer {
+            width: 15.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 29.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-content">
+        <!-- banner -->
+        <div class="banner">
+            <a href="nsjz-index.html" class="banner-icon"><img src="../images/icon-back-red.png" alt=""></a>
+            <h1 class="banner-title">详情</h1>
+            <a href="#" class="banner-icon search-tea"><img src="../images/icon-share.png" alt=""></a>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <div class="content-top">
+                <img src="../upload/nsyj-top.png" alt="">
+            </div>
+            <div class="comment">
+                <div class="comment-favorite"><img src="../images/icon-fav-black.png" alt=""></div>
+                <div class="comment-title">南宋御街</div>
+                <div class="comment-En">[Southern Song Imperial Street]
+                </div>
+                <div class="comment-text">
+                    <div class="comment-context">南宋都城临安铺设的一条主要街道。《咸淳临安志》等文献记载，铺设南宋御街一共使用了一万多块石板，但此前的考古发掘却只发现过香糕砖。<br><br> </div>
+                    <div class="comment-context">御街南起皇城北门和宁门（今万松岭和凤凰山路交叉口）外，经朝天门（今鼓楼）、中山中路、中山北路、观桥即今贯桥到今凤起路、武林路交叉口一带，是南宋临安城的中轴线，全长约4185米。它是皇帝于“四孟”（孟春、孟夏、孟秋、孟冬）到景灵宫（今武林路西侧，供奉皇室祖先塑像的场所）朝拜祖宗时的专用道路。<br><br></div>
+                    <div class="comment-context">南宋时期，每三年，皇帝都要进行一次为期三天的祭夭仪式。他沿着御街到景灵宫吃斋祭祖，住一晚后，再返回太庙(今鼓楼附近,供奉皇室祖先排位的场所)住一晚，再到城外的郊坛祭天，再住一晚后返回皇言。据说,皇帝车队走过时因为怕压坏石板，每次都要把石板拿掉，并铺上沙子。<br><br></div>
+                    <div class="comment-context">当时的御街对百姓来说也很重要，因为它两旁集中了数万家商铺，临安城一半的百姓都住在附近。“十里”御街可分三段:首段从万松岭到鼓楼，是临安的政治中心，靠近皇宫、朝廷中枢机关，皇亲国戚、文武百官集中,消费与购买力最强，因此，这里的店铺大多经营金银珍宝等高档奢侈品;第二段从鼓楼到众安桥，以羊坝头，官巷口为中心，是当时的商业中心。</div>
+                </div>
+
+            </div>
+        </div>
+        <!--foot-->
+        <footer class="aui-bar aui-bar-tab win_footer" id="footer">
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-sy" src="../images/icon-sy-on.png">
+                <a href="index.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">首页</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-qjns" src="../images/icon-qjns.png">
+                <a href="https://www.720yun.com/vr/59e249zu9ns">
+                    <div class="aui-bar-tab-label aui-tab-infro">全景南宋</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item color_blue">
+                <img class="bottom-icon icon-yqkz" src="../images/icon-yqkz.png">
+                <a href="yqkz.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">一起看展</div>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

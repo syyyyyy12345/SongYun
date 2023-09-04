@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南宋服饰</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/aui.css">
+    <style>
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: 21.33333333px;
+            }
+        }
+        
+        @media screen and (min-width: 360px) {
+            html {
+                font-size: 24px;
+            }
+        }
+        
+        @media screen and (min-width: 375px) {
+            html {
+                font-size: 25px;
+            }
+        }
+        
+        @media screen and (min-width: 384px) {
+            html {
+                font-size: 25.6px;
+            }
+        }
+        
+        @media screen and (min-width: 400px) {
+            html {
+                font-size: 26.66666667px;
+            }
+        }
+        
+        @media screen and (min-width: 414px) {
+            html {
+                font-size: 27.6px;
+            }
+        }
+        
+        @media screen and (min-width: 424px) {
+            html {
+                font-size: 28.26666667px;
+            }
+        }
+        
+        @media screen and (min-width: 480px) {
+            html {
+                font-size: 32px;
+            }
+        }
+        
+        @media screen and (min-width: 540px) {
+            html {
+                font-size: 36px;
+            }
+        }
+        
+        @media screen and (min-width: 720px) {
+            html {
+                font-size: 48px;
+            }
+        }
+        
+        @media screen and (min-width: 750px) {
+            html {
+                font-size: 50px;
+            }
+        }
+        
+        body {
+            min-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+            line-height: 1.5;
+            font-family: Arial, Helvetica;
+            background-color: #fcf9f2;
+        }
+        /* banner */
+        
+        .banner {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 1.8rem;
+            margin-top: 2rem;
+            text-align: center;
+            /* padding-top: 0.7rem; */
+        }
+        
+        .banner-icon {
+            flex: 1;
+            margin-top: 0.3rem;
+        }
+        
+        .banner-title {
+            flex: 5;
+            font-size: 1rem;
+            font-family: 华文隶书;
+            color: #a6362c;
+        }
+        
+        .banner img {
+            width: auto;
+            height: 0.9rem;
+            margin: 0 auto;
+        }
+        /* content */
+        
+        .content {
+            width: 100%;
+            /* height: 40rem; */
+            margin: 0 auto;
+            /* background-color: lightgray; */
+        }
+        
+        .top {
+            margin: 0.4rem auto;
+            text-align: center;
+        }
+        
+        .top img {
+            width: 100%;
+        }
+        
+        .title,
+        .text {
+            margin: 0 1.5rem;
+        }
+        
+        .title {
+            position: relative;
+            margin-top: 1rem;
+            font-family: 华文隶书;
+            font-size: 0.9rem;
+            /* font-weight: 700; */
+            z-index: 10;
+        }
+        
+        .title:after {
+            content: "";
+            position: absolute;
+            left: 1.8rem;
+            top: 0.6rem;
+            width: 40%;
+            height: 0.9rem;
+            border-radius: 0.3rem;
+            background-color: #f8e8d0;
+            z-index: -1;
+        }
+        
+        .text {
+            margin-top: 1rem;
+            font-family: 隶书;
+            line-height: 0.6rem;
+            font-size: 0.55rem;
+            color: #a58360;
+        }
+        
+        .wrap {
+            overflow: hidden;
+            height: 6.5rem;
+            margin-top: 1rem;
+        }
+        /* .wrap {
+            overflow: hidden;
+            height: 40px;
+        } */
+        
+        .cont {
+            height: 6.5rem;
+            overflow-x: auto;
+            overflow-y: hidden;
+            /* position: relative; */
+        }
+        
+        .state {
+            /* left: 0px;
+            top: 0px;
+            position: absolute; */
+            height: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            /* display: flex; */
+        }
+        
+        .state li {
+            display: inline-block;
+            height: 100%;
+            width: 8rem;
+            border-radius: 1rem;
+            border: 0.01rem solid #e8dfca;
+            /* float: left; */
+        }
+        
+        .state li a img {
+            max-height: 5.6rem;
+            margin: 0 auto;
+            /* min-width: 3.8rem; */
+        }
+        
+        .button {
+            height: 1.5rem;
+            width: 70%;
+            margin: 0rem auto;
+            font-size: 0.9rem;
+            text-align: center;
+            font-family: 隶书;
+            color: #a6362c;
+            border-radius: 0.8rem;
+            background-color: #f4e6d0;
+            box-shadow: 0.2rem 0.2rem 0.2rem #878175;
+        }
+        /* footer */
+        
+        #footer {
+            padding: 0 1rem;
+        }
+        
+        #footer div a {
+            color: #666;
+        }
+        
+        .aui-bar {
+            background-color: #f4e6d0;
+        }
+        
+        .bottom-icon {
+            width: 28%;
+            height: auto;
+            margin: 0.3rem auto;
+            padding-top: 0.15rem;
+        }
+        
+        body {
+            width: 15.25rem;
+            margin: 0 auto;
+            /* margin-top: 6rem; */
+            background-color: #fff;
+        }
+        
+        .all-content {
+            height: 30rem;
+            overflow-y: auto;
+            background-color: #fcf9f2;
+        }
+        
+        #footer {
+            width: 15.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 29.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-content">
+        <!-- banner -->
+        <div class="banner">
+            <a href="index.html" class="banner-icon"><img src="../images/icon-back-red.png" alt=""></a>
+            <h1 class="banner-title">南宋服饰</h1>
+            <a href="#" class="banner-icon search-tea"><img src="../images/icon-share.png" alt=""></a>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <div class="top"><img src="../upload/nsfs-top.png" alt=""></div>
+            <div class="title">南宋服饰特点</div>
+            <div class="text">宋代的服装面料，讲究的以丝织品为主，品种有织锦、花绫、纱、罗、绢、缂丝等。宋代织锦以成都蜀锦最有名，花纹有组合型几何纹的八搭晕、六搭晕、盘毯等。几何填花的葵花、族四金雕，大窠马打毯，雪花毯路、双窠云雁等。
+            </div>
+            <div class="wrap">
+                <div class="cont">
+                    <ul class="state">
+                        <li>
+                            <a href="nsfs-pic1.html"><img src="../upload/nsfs-pic1.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="nsfs-pic2.html"><img src="../upload/nsfs-2-1.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="nsfs-pic3.html"><img src="../upload/nsfs-pic2.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="nsfs-pic4.html"><img src="../upload/nsfs-4-1.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="nsfs-an.html">
+                <div class="button">开启南宋人生</div>
+            </a>
+        </div>
+        <!--foot-->
+        <footer class="aui-bar aui-bar-tab win_footer" id="footer">
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-sy" src="../images/icon-sy-on.png">
+                <a href="index.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">首页</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item">
+                <img class="bottom-icon icon-qjns" src="../images/icon-qjns.png">
+                <a href="https://www.720yun.com/vr/59e249zu9ns">
+                    <div class="aui-bar-tab-label aui-tab-infro">全景南宋</div>
+                </a>
+            </div>
+            <div class="aui-bar-tab-item color_blue">
+                <img class="bottom-icon icon-yqkz" src="../images/icon-yqkz.png">
+                <a href="yqkz.html">
+                    <div class="aui-bar-tab-label aui-tab-infro">一起看展</div>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
